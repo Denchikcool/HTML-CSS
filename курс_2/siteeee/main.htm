@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APPAREL</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+        var count = 0;
+        var summa = 0;
+        function add_to_cart(price) {
+            summa += price;
+            count += 1;
+
+            document.getElementById("count").textContent = "Количество: " + count;
+            document.getElementById("summa").textContent = "Сумма: " + summa + "₽";
+        }
+        function clear_cart() {
+            summa = 0;
+            count  = 0;
+
+            document.getElementById("count").textContent = "Количество";
+            document.getElementById("summa").textContent = "Сумма";
+        }
+
+    </script>
+
+
+
+</head>
+<body>
+
+<header>
+    <nav class="container">
+      <a class="logo" href="main.htm">
+        <span>APPAREL</span>
+      </a>
+      <div class="nav-toggle"><span></span></div>
+	  
+      <form action="" method="get" id="searchform">
+        <input type="text" placeholder="Искать на сайте...">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <ul id="menu">
+        <li><a href="shop.htm">МАГАЗИН</a></li>
+        <li><a href="question.htm">ВОПРОСЫ</a></li>
+        <li><a href="contact.htm">КОНТАКТЫ</a></li>
+          
+      </ul>
+        
+        
+        
+        
+        
+         <div class="cart">
+        <input type="image" src="icons8-%D0%B1%D1%8B%D1%81%D1%82%D1%80%D0%B0%D1%8F-%D1%82%D0%B5%D0%BB%D0%B5%D0%B6%D0%BA%D0%B0-96.png" width="30px" height="30px" onclick="clear_cart()" alt="Очистить корзину">
+
+        <div class="cartxt">
+            <a class="link_nav" id="count" href="#">Количество</a>
+            <a class="link_nav" id="summa" href="#">Сумма</a>
+
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+    </nav>
+  </header>
+    
+  
+  <div class="container">
+  <div class="posts-list">
+    <article id="post-1" class="post">
+      <div class="post-image">
+	  <a href="orange-ripndip-hoodie.htm"><img src="ripndip-hoodie01.jpg" class="scale"></a>
+	  <a href="gray-dime-hoodie.htm"><img src="dime-hoodie01.jpg" class="scale"></a>
+	  <a href="color-carhartt-hoodie.htm"><img src="carhartt-hoodie01.jpg" class="scale"></a>
+	  <a href="yellow-nikesb-hoodie.htm"><img src="nikesb-hoodie01.jpg" class="scale"></a>
+	  </div>
+	  
+	  <table class="post-text">
+	  <tr>
+	  <td class="ripndip"><a href="">ТОЛСТОВКА RIPNDIP</a></td>
+	  <td class="dime"><a href="dime page.htm">ТОЛСТОВКА DIME</a></td>
+	  </tr>
+	  </table>
+	  
+	  <table class="post-text2">
+	  <tr>
+	  <td class="wip"><a href="">ТОЛСТОВКА CARHARTT WIP</a></td>
+	  <td class="nike"><a href="">ТОЛСТОВКА NIKE SB</a></td>
+	  </tr>
+	  </table>
+	  
+	  <table class="post-price">
+	  <tr>
+	  <td class="ripndip"><a href="">8 590 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(8590);'>Купить</button></td>
+	  <td class="dime"><a href="dime page.htm">11 490 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(11490);'>Купить</button></td>
+	  </tr>
+	  </table>
+	  
+	  <table class="post-price2">
+	  <tr>
+	  <td class="ripndip"><a href="">8 490 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(8490);'>Купить</button></td>
+	  <td class="dime"><a href="">6 290 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(6290);'>Купить</button></td>
+	  </tr>
+	  </table>
+	  
+	  <div class="post-image2">
+	  <img src="dime shop.jpg" class="scale-dime">
+	  </div>
+	  
+	  <div class="post-image3">
+	  <img src="fa.jpg" class="scale-x">
+	  </div>
+	  
+	  <div class="post-image4">
+	  <a href="decks.htm"><img src="decks1.jpg" class="scale-dime"></a>
+	  </div>
+	  
+	  <table class="collab">
+	  <tr>
+	  <td class="col">Коллаборация двух уникальных брендов. <br> Новый неповторимый дизайн, но неизменная <br> старая и крепкая технология изготовления.</td>
+	  </tr>
+	  </table>
+	  
+	  <table class="post-use">
+	  <tr>
+	  <td class="use">ПОПУЛЯРНЫЕ ТОВАРЫ</td>
+	  </tr>
+	  </table>
+	  
+	  <div class="post-image5">
+	  <a href="nikesb-bruin.htm"><img src="nikesb-bruin01.jpg" class="scale"></a>
+	  <a href="green-dime-shirt.htm"><img src="dime-shirt01.jpg" class="scale"></a>
+	  <a href="nikesb-blazer.htm"><img src="nikesb-blazer01.jpg" class="scale"></a>
+	  <a href="cargo-nikesb.htm"><img src="nikesb-cargo01.jpg" class="scale"></a>
+	  </div>
+	  
+	  <table class="post-use2">
+	  <tr>
+	  <td class="nike"><a href="">КРОССОВКИ NIKE SB</a></td>
+	  <td class="dime"><a href="dime page.htm">ФУТБОЛКА DIME</a></td>
+	  </tr>
+	  </table>
+	  
+	  <table class="post-use3">
+	  <tr>
+	  <td class="adidas"><a href="">КРОССОВКИ NIKE SB</a></td>
+	  <td class="nike-p"><a href="">БРЮКИ NIKE SB</a></td>
+	  </tr>
+	  </table>
+	  
+	  <table class="price-use">
+	  <tr>
+	  <td class="nike-s"><a href="">7 290 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(7290);'>Купить</button></td>
+	  <td class="dime-t"><a href="dime page.htm">4 290 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(4290);'>Купить</button></td>
+	  </tr>
+	  </table>
+	  
+	  <table class="price-use2">
+	  <tr>
+	  <td class="adidas-s"><a href="">8 690 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(8690);'>Купить</button></td>
+	  <td class="nike-p"><a href="">6 990 ₽</a><br><button class="buttonToBuy" onclick='add_to_cart(6990);' >Купить</button></td>
+	  </tr>
+	  </table>
+	  
+	  <div class="post-image6">
+	  <img src="line.png">
+	  </div>
+	  
+	  <table class="post-about">
+	  <tr>
+	  <td class="about">О МАГАЗИНЕ</td>
+	  </tr>
+	  </table>
+	  
+	  <table class="post-about2">
+	  <tr>
+	  <td class="about2">ПРОСТО МАГАЗИН ОДЕЖДЫ И НЕ ТОЛЬКО.</td>
+	  </tr>
+	  </table>
+	  
+	  <div class="post-image7">
+	  <img src="pay.jpg">
+	  </div>
+	  
+	  <table class="post-store">
+	  <tr>
+	  <td class="store"><a href="main.htm">©Apparelstore</a></td>
+	  </tr>
+	  </table>
+	  
+	  <div class="post-image01">
+	  <a href=""><img src="" class="scale"></a>
+	  </div>
+      <div class="post-content">
+      <div class="category"><a href="https://www.youtube.com/watch?v=ipAnwilMncI"></a></div>
+		
+    </div>
+    </div>
+    </div>
+    </article>
+    </article>
+  </div> 
+
+
+
+</body>
+</html>
+
